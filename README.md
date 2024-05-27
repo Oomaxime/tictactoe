@@ -1,8 +1,23 @@
-# React + Vite
+# <p align="center">TicTacToe</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objectif
+Concevoir une application avec Vite.js et React.js.
+L'application permettra de jouer à un TicTacToe.
 
-Currently, two official plugins are available:
+## 🧑🏻‍💻 Pour démarer le projet
+```bash
+npm i
+```
+```bash
+npm run dev
+```
+        
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🙇 Auteurs
+- Maxime: [@Oomaxime](https://github.com/Oomaxime)
+- Alexis: [@Alexis-Gontier](https://github.com/Alexis-Gontier)
+- Arnaud: [@Jeck0v](https://github.com/Jeck0v)           
+
+
+## ❤️ Support  
+Une simple étoile vers le repo de ce projet suffit à me motiver sur ce projet pendant des jours. Si le projet vous plait n'hésiter pas !

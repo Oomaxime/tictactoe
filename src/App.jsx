@@ -3,9 +3,9 @@ import Grid from "./components/grid.jsx";
 
 function App() {
   return (
-    <>
+    <div className="center">
       <Grid />
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Cell from "./cell.jsx";
+import { RxCross2 } from "react-icons/rx";
+import { FaRegCircle } from "react-icons/fa";
 
 function Grid() {
   const [xPlay, setxPlay] = useState(true);
@@ -52,50 +54,50 @@ function Grid() {
 
   return (
     <>
-      <strong>{playingState}</strong>
+      <h2>{playingState}</h2>
       <div className="grid">
         <Cell
-          className="cell1 cell"
+          className="cell1"
           value={board[0]}
           onCellClick={() => handleClick(0)}
         />
         <Cell
-          className="cell2 cell"
+          className="cell2"
           value={board[1]}
           onCellClick={() => handleClick(1)}
         />
         <Cell
-          className="cell3 cell"
+          className="cell3"
           value={board[2]}
           onCellClick={() => handleClick(2)}
         />
         <Cell
-          className="cell4 cell"
+          className="cell4"
           value={board[3]}
           onCellClick={() => handleClick(3)}
         />
         <Cell
-          className="cell5 cell"
+          className="cell5"
           value={board[4]}
           onCellClick={() => handleClick(4)}
         />
         <Cell
-          className="cell6 cell"
+          className="cell6"
           value={board[5]}
           onCellClick={() => handleClick(5)}
         />
         <Cell
-          className="cell7 cell"
+          className="cell7"
           value={board[6]}
           onCellClick={() => handleClick(6)}
         />
         <Cell
-          className="cell8 cell"
+          className="cell8"
           value={board[7]}
           onCellClick={() => handleClick(7)}
         />
         <Cell
-          className="cell9 cell"
+          className="cell9"
           value={board[8]}
           onCellClick={() => handleClick(8)}
         />

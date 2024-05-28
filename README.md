@@ -19,5 +19,5 @@ npm run dev
 - Maxime: [@Oomaxime](https://github.com/Oomaxime)
 - Alexis: [@Alexis-Gontier](https://github.com/Alexis-Gontier)
 - Arnaud: [@Jeck0v](https://github.com/Jeck0v)
-- Louis:         
+- Louis:  [@Kae134](https://github.com/Kae134)   
 

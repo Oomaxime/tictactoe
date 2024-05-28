@@ -1,9 +1,9 @@
-function Cell() {
-    return (
-        <div className="cell">
-            <p>aaa</p>
-        </div>
-    )
+function Cell({ value, onCellClick }) {
+  return (
+    <div className="cell" onClick={onCellClick}>
+      <p>{value}</p>
+    </div>
+  );
 }
 
 export default Cell;

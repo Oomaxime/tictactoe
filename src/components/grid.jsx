@@ -42,7 +42,10 @@ function Grid() {
     }
     return null;
   }
-
+  function reset() {
+    setboard(Array(9).fill(null));
+    setxPlay(true);
+  }
   const winner = getWin(board);
 
   let playingState = "Au tour de: X";
@@ -102,7 +105,8 @@ function Grid() {
           onCellClick={() => handleClick(8)}
         />
       </div>
-      {/*AJOUTER UN BOUTON RESET*/}
+      {/*BOUTON RESET appel la function reset et je lui met le bail en vide et les X peuvent jouer après*/}
+      <button onClick={reset} className="BtnReset">Réinitialiser</button>
     </>
   );
 }

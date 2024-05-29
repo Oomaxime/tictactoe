@@ -46,15 +46,23 @@ function Grid() {
     setboard(Array(9).fill(null));
     setxPlay(true);
   }
+
+  function isDraw(board) {
+    return !board.includes(null);
+  }
+
   const winner = getWin(board);
 
   let playingState = "Au tour de: X";
   if (winner) {
     playingState = winner + " a gagné !";
   } else {
-    playingState = "Au tour du : " + (xPlay ? "Joueur 1" : "Joueur 2");
+    if (isDraw(board)) {
+      playingState = "égalité";
+    } else {
+      playingState = "Au tour du : " + (xPlay ? "Joueur 1" : "Joueur 2");
+    }
   }
-
   return (
     <>
       <h2>{playingState}</h2>
@@ -106,7 +114,10 @@ function Grid() {
         />
       </div>
       {/*BOUTON RESET appel la function reset et je lui met le bail en vide et les X peuvent jouer après*/}
-      <button onClick={reset} className="BtnReset"> Réinitialiser </button>
+      <button onClick={reset} className="BtnReset">
+        {" "}
+        Réinitialiser{" "}
+      </button>
     </>
   );
 }

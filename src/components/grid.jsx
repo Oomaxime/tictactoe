@@ -106,7 +106,7 @@ function Grid() {
         />
       </div>
       {/*BOUTON RESET appel la function reset et je lui met le bail en vide et les X peuvent jouer après*/}
-      <button onClick={reset} className="BtnReset">Réinitialiser</button>
+      <button onClick={reset} className="BtnReset"> Réinitialiser </button>
     </>
   );
 }

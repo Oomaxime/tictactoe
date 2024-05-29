@@ -40,6 +40,9 @@ function Grid() {
     }
     return null;
   }
+  function isDraw(board) {
+    return !board.includes(null);
+  }
 
   const winner = getWin(board);
 
@@ -47,7 +50,11 @@ function Grid() {
   if (winner) {
     playingState = winner + " a gagné !";
   } else {
-    playingState = "Au tour du : " + (xPlay ? "Joueur 1" : "Joueur 2");
+    if (isDraw(board)) {
+      playingState = "égalité";
+    } else {
+      playingState = "Au tour du : " + (xPlay ? "Joueur 1" : "Joueur 2");
+    }
   }
 
   return (

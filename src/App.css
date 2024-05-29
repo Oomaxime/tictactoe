@@ -1,7 +1,8 @@
-.BtnReset{
+.BtnReset {
   width: 150px;
   height: 50px;
-  background-color: lightblue;
+  background-color: rgb(65, 65, 65);
+  color: #fbfbfb;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@
 }
 
 .BtnReset:hover {
-  background-color: #87cefa;
+  background-color: #656565;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -30,13 +31,18 @@
 .cell {
   width: 150px;
   height: 150px;
-  background-color: lightblue;
-  font-size: 3rem;
+  background-color: rgb(66, 66, 66);
+  font-size: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
+}
+
+.cell:hover {
+  background-color: #656565;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cell1 {
